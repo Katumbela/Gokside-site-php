@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulolesa | Home </title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css.map">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+    @font-face {
+        font-family: edoz;
+        src: url(fontes/edosz.ttf);
+    }
+    @font-face {
+        font-family: sete;
+        src: url(fontes/78936___.TTF);
+    }
+    @font-face {
+        font-family: caprica;
+        src: url(fontes/CapricaScriptPersonalUse.ttf);
+    }
+    @font-face {
+        font-family: club;
+        src: url(fontes/CLUB____.TTF);
+    }
+    @font-face {
+        font-family: achen;
+        src: url(fontes/AACHEN_1.TTF);
+    }
+    @font-face {
+        font-family: roboto;
+        src: url(fontes/Roboto-Light.ttf);
+    }
+    @font-face {
+        font-family: acid;
+        src: url(fontes/Acidic.TTF);
+    }
+    @font-face {
+        font-family: euro;
+        src: url(fontes/eurof55.ttf);
+    }
+    @font-face {
+        font-family: e2;
+        src: url(fontes/eurof75.ttf);
+    }
+
+    .f-sete{
+        font-family: sete;
+    }
+    .f-achen{
+        font-family: achen;
+    }
+    .f-e{
+        font-family: edoz;
+    }
+    .f-c{
+        font-family: caprica;
+    }
+    .f-euro{
+        font-family: euro;
+    }
+    .f-roboto{
+        font-family: roboto;
+    }
+    .f-acid{
+        font-family: acid;
+    }
+    .f-club{
+        font-family: club;
+    }
+    .f-euro2{
+        font-family: e2;
+    }
+    .f-12{
+        font-size: 12px;
+    }
+    .f-14{
+        font-size: 14px;
+    }
+    .f-16{
+        font-size: 16px;
+    }
+    .f-18{
+        font-size: 18px;
+    }
+    .f-20{
+        font-size: 20px;
+    }
+    .f-22{
+        font-size: 22px;
+    }
+    .f-24{
+        font-size: 24px;
+    }
+    .f-26{
+        font-size: 26px;
+    }
+    .f-28{
+        font-size: 28px;
+    }
+    .f-30{
+        font-size: 30px;
+    }
+    .f-35{
+        font-size: 35px;
+    }
+    .f-40{
+        font-size: 40px;
+    }
+    
+    
+    
+    @media screen and (min-width: 700px){
+        
+    
+    .f-50{
+        font-size: 50px;
+    }
+    .f-60{
+        font-size: 60px;
+    }
+    .f-70{
+        font-size: 70px;
+    }
+    .f-80{
+        font-size: 80px;
+    }
+    .f-90{
+        font-size: 90px;
+    }
+    .f-100{
+        font-size: 100px;
+    }
+
+    }
+    .primario{
+        color: #0066be;
+    }
+
+    .logog{
+        display: none;
+    }
+
+    @keyframes piscar {
+        0%{
+            opacity: .5;
+        }
+
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: .5;
+        }
+    }
+
+    @keyframes salt {
+        0%{
+            transform: translateY(10px);
+        }
+
+        50%{
+            transform: translateY(-15px);
+        }
+        100%{
+            transform: translateY(10px);
+        }
+    }
+
+
+    .b svg{
+        cursor: pointer;
+        animation: 2s salt linear infinite;
+    }
+    
+    .b:hover svg{
+       animation: step-start;
+   }
+
+    @media screen and (min-width: 760px) {
+        
+    .logog{
+        display: block;
+        position: absolute;
+        right: 18%;
+        top: 8rem;
+        animation: 2s piscar ease-in infinite;
+    }
+    }
+
+    body, html{
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    #service, header{
+        height: 100vh;
+    }
+
+    .p1{
+        min-height: 80vh;
+        max-height: 80vh;
+        background: #f1f1f1;
+        min-width: 50%;
+        max-width: 50%;
+        display: grid;
+        place-items: center;
+        border-radius: 30px;
+        box-shadow: 0px 2px 9px rgb(219, 219, 219);
+    }
+
+    .p2{
+        min-height: 76vh;
+        max-height: 76vh;
+        display: grid;
+        place-items: center;
+        background: #ffffff;
+        min-width: 92%;
+        max-width: 92%;
+        border-radius: 20px;
+    }
+
+    .p3{
+        min-height: 76vh;
+        max-height: 76vh;
+        background: transparent;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    .t2, .t3, .t4{
+        display: none;
+    }
+</style>
+<body class="bg-light">
+    
+    <header>
+        <nav class="navbar nav navbar-light bg-primary">
+            <div class="container">
+                <a href="#" class="navbar-brand text-white f-euro2 f-30">Kulolesa</a>
+            </div>
+        </nav>
+
+    <div class="row">
+        <div class="mt-lg-5 p-5 pt-md-5 pt-lg-5 ml-lg-3 ml-md-3 mt-md-5 col-12 col-lg-6 col-md-6 col-xs-8 col-sm-12">
+            <h1 class="f-euro2 primario f-80">Experiencias de África e serviços</h1>
+        </div>
+        <div class="mt-lg-5 p-5 pt-md-5 pt-lg-5 ml-lg-3 ml-md-3 mt-md-5 col-12 col-lg-6 col-md-6 col-xs-8 col-sm-12">
+   
+        </div>
+    </div>             
+    <img src="img/logo2.png" class="logog" alt="">   
+<div class="b">
+    <center>
+        <a href="#service"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <title>Ver mais</title>
+            <path d="M17.25 15.879l-4.5 4.5v-19.558h-1.5v19.558l-4.5-4.5-1.061 1.061 6.311 6.31 6.31-6.31-1.061-1.061z"></path>
+            </svg></a>
+             </center>
+</div>
+    </header>
+
+    <div class="bg-primary p-4" id="service">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-6 col-xs-">
+                <div class="container-lg pl-lg-5 pt-lg-5">
+                    <div class="p1">
+                        <div class="p2">
+                            <div class="p3">
+                                <center>
+                                    <div class="t1"><img src="img/tela.png"  height="410em" alt=""></div>
+                                    <div class="t2"><img src="img/tela.png"  height="410em" alt=""></div>
+                                    <div class="t3"><img src="img/tela.png"  height="410em" alt=""></div>
+                                    <div class="t4"><img src="img/tela.png"  height="410em" alt=""></div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-xs-">
+                <div class="container">
+                    
+                    <h1 class="f-euro2 f-60 text-white">Serviços de Transportes</h1>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(window).ready(function () {
+            $(".svg").click(function () {
+                alert("aaa");
+            })
+        });
+    </script>
+</body>
+</html>
